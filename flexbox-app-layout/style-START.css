@@ -56,7 +56,6 @@ a.button {
 
 
 .icon-bar a {
-  flex:1;
   text-align: center;
   padding:1.5rem;
   border-left:1px solid rgba(0,0,0,0.1);
@@ -74,6 +73,7 @@ a.button {
 
 .icon-bar {
   border-top:1px solid #E6E6E6;
+  /* height: 400px; */
 }
 
 .icon-bar i {
@@ -98,7 +98,31 @@ a.button {
 
 */
 
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
 
-/*
-  Overall Layout
-*/
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SUPER IMPORTANT - Will have content fit within certain area space */
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar a {
+  flex: 1;
+}

@@ -31,6 +31,7 @@ a {
   filter:blur(5px);
   position: absolute;
   top: 0;
+  z-index: -1;
 }
 
 /*Hack to get them to align properly */
@@ -63,3 +64,20 @@ a {
 }
 
 /*Flexbox Starts Here*/
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 10; */
+}
+
+.flex-form {
+  display: flex;
+  border: 10px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+input[type=search] {
+  flex-basis: 400px;
+}
